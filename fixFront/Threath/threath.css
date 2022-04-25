@@ -1,0 +1,82 @@
+h1 {
+  color: #fff;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: #00000;
+  font-family: courier;
+  font-size: 160%;
+}
+
+body {  
+  background-image: url('rectangle1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+
+}
+
+form {
+    width:500px;
+    margin:50px auto;
+}
+
+
+a{text-decoration: none; font-size: 20px;font-family: sans-serif;padding: 14px 10px}
+ul{padding: 14px}
+li{list-style: none; display: inline;}
+li a{; color:#d4d4d4;}
+li a:hover{background: #4da4ff; color:#fff;}
+
+
+.kanan{
+    width: 50%;
+    height: 150%;
+}
+.kiri{
+    font-size: 72pt;
+    margin-left: 20%;
+
+}
+.wrapper{
+    width: 10%;
+    display: flex;
+    
+}
+.img1{
+    margin-top: 15%;
+    width: 80%;
+    height: auto;
+}
+.imglogo{
+    margin-left: 10%;
+    width:5% ;
+    height:10%;
+  
+}
+.konten{
+  margin-top: -300px;
+  right: 100px;
+  position: absolute;
+}
+
+.Ellipse{
+    margin: 5% 0% 0% 0%;
+}
+
+
+.box1{
+margin: 3% 1% 0% 0%;
+width:90%;
+height:950px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
+}
+
+.textmenulis{
+    height: 400px;
+    width: 90%;
+}

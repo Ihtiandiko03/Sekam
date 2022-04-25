@@ -1,47 +1,10 @@
-
-.container {
-    border: 2px solid #dedede; 
-    background-color: #f1f1f1; 
-    border-radius: 5px; 
-    padding: 10px; 
-    margin: 10px 0;
-}
-.gelap {
-    border-color: #ccc; 
-    background-color: #ddd;
-}
-.container::after {
-    content: ""; 
-    clear: both; 
-    display: table;}
-.container img {
-    float: left; 
-    max-width: 60px; 
-    width: 100%; 
-    margin-right: 20px; 
-    border-radius: 50%;
-}
-.container img.m_right {
-    float: right; 
-    margin-left: 20px; 
-    margin-right:0;
-}
-.right {
-    float: right; 
-    color: #575252;
-}
-.left {
-    float: left; 
-    color: #3b3939;
-}
-
 h1 {
   color: #fff;
   font-family: verdana;
   font-size: 300%;
 }
 p {
-  color: #fff;
+  color: #00000;
   font-family: courier;
   font-size: 160%;
 }
@@ -95,12 +58,45 @@ li a:hover{background: #4da4ff; color:#fff;}
 }
 .konten{
   margin-top: -300px;
+  right: 100px;
+  position: absolute;
 }
 
 
 
-
-
+.box1{
+margin: 5% 1% 0% 0%;
+width:20%;
+height:450px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
+}
+.box2{
+margin: 5% 1% 0% 0%;
+width:60%;
+height: 1000px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
+}
+.box3{
+margin: 5% 0% 0% 0%;
+width:15%;
+height:500px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
+}
+.box4{
+margin: 36% 0% 0% 0%;
+width:20%;
+height:250px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
+position: absolute;
+}
 .TombolKembali{
     padding-top: 2%;
     margin-left: -85%;
@@ -111,10 +107,10 @@ li a:hover{background: #4da4ff; color:#fff;}
     display: flex;
 }
 .gambarberita{
+    margin-right: 40%;
     height:40%;
     width:40%;
     border-radius: 20px;
-    margin-left: -40%;
 }
 .konten{
     padding-left: 50%;
@@ -128,66 +124,44 @@ li a:hover{background: #4da4ff; color:#fff;}
     margin-top: 5%;
 
 }
+.contanin{
+    display: flex;
+}
+.gambarlofi{
+    height: 30%;
+    width: 30%;
 
-.wrap{
-    background: blue;
-    width: 900px;
-    margin: 10px auto;
 }
- 
-/*bagian header*/
-.wrap .header{
-    background: green;
-    /*height: 50px;*/
-    padding: 2px 10px;
+.Tombolthread{
+    height: 10%;
+    width: 40%;
 }
- 
-/*akhir header*/
- 
-/*bagian menu*/
-.wrap .menu{
-    background: yellow;
+.gambarlofilebar{
+    height: 40%;
+    width: 80%;
+
 }
- 
-.wrap .menu ul{
-    padding: 0;
-    margin: 0;
-    background: yellow;
-    overflow: hidden;
+.box5{
+position: absolute;
+margin: 72% 0% 0% 0%;
+width:60%;
+height: 400px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
 }
- 
-.wrap .menu ul li{
-    float: left;
-    list-style-type: none;
-    padding: 10px;
+.box6{
+position: absolute;
+margin: 100% 0% 0% 0%;
+width:60%;
+height: 400px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
 }
-/*akhir menu*/
- 
-.clear{
-    clear: both;
+.Layoutdalam2{
+    margin-left: 30%;
 }
- 
-.badan{
-    height: 450px;
-}
-/*bagian sidebar*/
-.wrap .badan .sidebar{
-    background: orange;
-    float: left;    
-    width: 25%;
-    height: 100%;
-}
- 
-/*akhir sidebar*/
- 
-.wrap .badan .content{
-    background: red;
-    float: left;
-    height: 100%;
-    width: 75%; 
-}
- 
-.wrap .footer{
-    width: 100%;
-    padding: 10px;
+.Ellipse{
+    margin: 5% 0% 0% 0%;
 }
