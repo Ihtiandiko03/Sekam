@@ -28,6 +28,9 @@
       </li>
       
       {% endif %}
+      {% if user.is_superuser %}
+        <li><a href="../admin" style="color:white ; font-size: 18pt; font-family: Poppins;">Admin</a></li>
+      {% endif %}
     </ul>
 
   </nav>

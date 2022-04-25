@@ -12,5 +12,5 @@ class data_umkm (models.Model):
 	daftar_produk = models.TextField()
 	foto_produk = models.ImageField()
 
-	def __str__(self):
-		return "{}".format(self.nama_umkm)
+	# def __str__(self):
+	# 	return "{}".format(self.nama_umkm)

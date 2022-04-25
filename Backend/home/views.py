@@ -16,7 +16,7 @@ def register(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Hi {username}, akun anda sudah didaftarkan')
+            messages.success(request, f'Hi {username}, akun anda sudah didaftarkan. Silahkan login')
             return redirect('home')
     else:
         form = UserRegisterForm()

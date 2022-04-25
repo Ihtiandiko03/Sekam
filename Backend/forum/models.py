@@ -1,5 +1,6 @@
 from django.db import models
-from home.models import user
+from django.contrib.auth.models import User
+from django.utils.text import slugify
 
 # Create your models here.
 
@@ -16,23 +17,27 @@ class topik(models.Model):
 
 	]
 
-
-	username = models.ForeignKey(user, on_delete=models.CASCADE)
+	username = models.ForeignKey(User, on_delete=models.CASCADE)
 	judul = models.CharField(max_length=255)
 	isi_topik = models.TextField()
 	tanggal_upload = models.DateField()
-	gambar = models.ImageField()
+	gambar = models.ImageField(upload_to='static/forum/%Y/%m/%d')
 	kategori = models.CharField(max_length=100, choices=List_Kategori)
+	slug = models.SlugField(blank=True, editable=False)
+
+	def save(self):
+		self.slug = slugify(self.judul)
+		super(topik, self).save()
 
 	def __str__(self):
-		return "{}.{}".format(self.id, self.username, self.judul)
+		return "{}.{}".format(self.username, self.judul)
 
 
 class komentar(models.Model):
-	username_user = models.ForeignKey(user, on_delete=models.CASCADE)
+	username_user = models.ForeignKey(User, on_delete=models.CASCADE)
 	tanggal_upload = models.DateField()
 	isi_komentar = models.TextField()
 	id_topik = models.ForeignKey(topik, on_delete=models.CASCADE)
 
 	def __str__(self):
-		return "{}.{}".format(self.id, self.id_topik, self.isi_komentar)
+		return "{}.{}".format(self.id_topik, self.isi_komentar)

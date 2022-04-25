@@ -28,10 +28,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', homeViews.index, name='home'),
     path('berita/', include('berita.urls')),
-    url(r'forum/$', forumViews.index),
     url(r'umkm/$', umkmViews.index),
     # url(r'login/$',homeViews.login),
     url(r'login/$',  auth_view.LoginView.as_view(template_name='home/login.html'), name="login"),
     url(r'logout/$',  auth_view.LogoutView.as_view(template_name='home/logout.html'), name="logout"),
-    url(r'register/$',homeViews.register, name='register')
+    url(r'register/$',homeViews.register, name='register'),
+    path('forum/', include('forum.urls'))
 ]

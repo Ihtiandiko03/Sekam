@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forum | SEKAM</title>
+  <link rel="stylesheet" type="text/css" href="/static/img/forum/forum.css">
+</head>
+<img class="imglogo" src="/static/img/forum/logosekam.png">
+
+<div>
+  <nav style="margin-left: 31%; margin-top: -6%;">
+    <ul>
+
+      <li>
+        <a href="/" style="color:white ; font-size: 18pt;  font-family: Poppins;">Beranda</a>
+      </li>
+      <li><a href="/berita" style="color:white; font-size: 18pt; font-family: Poppins;">Berita</a></li>
+      <li><a href="/umkm" style="color:white ; font-size: 18pt; font-family: Poppins;">UMKM</a></li>
+      
+
+      {% if user.is_authenticated %}
+        <li><a href="/forum" style="color:white ; font-weight: bolder;font-size: 18pt; font-family: Poppins;">Forum</a></li>
+
+        <li><a href="/logout" style="color:red ; font-size: 18pt; font-weight: bold; font-family: Poppins;">Keluar</a></li>
+      {% else %}
+      <li><a href="/login" style="color:white ; font-weight: bolder;font-size: 18pt; font-family: Poppins;">Forum</a></li>
+      <li>
+        <a href="/login"><img src="/static/img/home/profile.png" width="35px" height="35px" style="margin-left:30%" /></a>
+      </li>
+      
+      {% endif %}
+    </ul>
+
+  </nav>
+
+
+</div>
+
+
+
+
+<body>
+<center>
+<div class="contanin">
+<div class="box1">
+  <p>Heksa</p>
+  <div class="layoutdalam">
+    <p>Heksa</p>
+    <img class="gambarlofi" src="/static/img/forum/GAMBARLOFI.png">
+    <p>Heksa</p>
+    <img class="gambarlofi" src="/static/img/forum/GAMBARLOFI.png">
+
+  </div>
+</div>
+
+
+<div class="box2">
+  <img class="Ellipse" src="/static/img/forum/Ellipse.png">
+  <p>{{semua_akun.username}}</p>
+  <p style="font-size: 12px;">{{semua_akun.tanggal_upload}}</p>
+  <div class="layoutdalam">
+    <p>{{semua_akun.judul}}</p>
+    <img class="gambarlofilebar" src="/{{semua_akun.gambar}}">
+    <p>{{semua_akun.isi_topik}}</p>
+
+
+  </div>
+</div>
+
+
+
+<div class="box3">
+  <p>Kamu mau topik apa?</p>
+  <div class="layoutdalam">
+    <a href="#"><p style="font-size: 18px;">UMKM</p></a>
+    <a href="#"><p style="font-size: 18px;">Berita</p></a>
+    <a href="#"><p style="font-size: 18px;">Rekomendasi</p></a>
+    <a href="#"><p style="font-size: 18px;">Aplikasi</p></a>
+
+  </div>
+</div>
+<div class="box4">
+  <p>Mau bikin Thread?</p>
+  <div class="layoutdalam">
+    <p style="font-size: 14px;">Forum untuk berbagi berita,rekomendasi atau terkait dengan aplikasi</p>
+    <a href="#"><img class="Tombolthread" src="/static/img/forum/Tombolthread.png"></a>
+
+
+  </div>
+</div>
+
+{%  for data in posts_komentar %}
+<div class="box5"  style="margin-left: 21%;">
+  <img class="Ellipse" src="/static/img/forum/Ellipse.png">
+  <p>{{data.username_user}}</p>
+  <p style="font-size: 12px;">{{data.tanggal_upload}}</p>
+  <div class="layoutdalam2">
+    <p>{{data.isi_komentar}}</p>
+  </div>
+</div>
+{%endfor%}
+
+
+
+</div>
+</body>
+
+</html>
