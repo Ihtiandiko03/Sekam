@@ -23,7 +23,7 @@ class topik(models.Model):
 	tanggal_upload = models.DateField()
 	gambar = models.ImageField(upload_to='static/forum/%Y/%m/%d')
 	kategori = models.CharField(max_length=100, choices=List_Kategori)
-	slug = models.SlugField(blank=True, editable=False)
+	slug = models.SlugField(primary_key=True,blank=True, editable=False)
 
 	def save(self):
 		self.slug = slugify(self.judul)

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+{%for data in posts_komentar%}
+	<div class="box5"  style="margin-left: 21%;">
+	  <p>{{data.username_user}}</p>
+	  <p style="font-size: 12px;">{{data.tanggal_upload}}</p>
+	  <div class="layoutdalam2">
+	    <p>{{data.isi_komentar}}</p>
+	  </div>
+	</div>
+{%endfor%}
+</body>
+</html>

@@ -13,23 +13,22 @@
 
           <center>
             <img class="imglogo" src="../static/img/home/logosekam.png">
-            <h2 class="text1">Login ke Akun Anda</h2></center>
+            <h2 class="text1">Login ke Akun Anda</h1></center>
             <form action="" method="POST">
                 {% csrf_token %}
 
                 <fieldset class="form-group">
-                  {# <legend class="border-bottom mb-4" style="color: white;">Sign In Now</legend> #}
+                  <legend class="border-bottom mb-4" style="color: white;">Sign In Now</legend>
                   {{ form|crispy }}
                 </fieldset>
 
-                <br><center><button class="btn ">Sign In</button></center>
+                <center><button class="btn ">Sign In</button></center>
 
-            <center>
-              <br><a href="../register"><p>Daftar Disini</p></a><br>
-              <a href="#"><p>Lupa Kata Sandi?</p></a><br>
-            </center>
+            <br>
+             <a href="../register"><p>Daftar Disini</p></a>
+             <!-- <a href="#"><p>Lupa Kata Sandi?</p></a> --><br>
 
-            <center><p>----- Atau Login Dengan -----</p>
+            <center><p>-----Atau Bisa Login dengan-----</p>
             <br>
             <a href="#"><img src="../static/img/home/Google.png" style="height: 80%; width: 80%;"></a> 
             <a href="#"><img src="../static/img/home/Facebook.png" style="height: 80%; width: 80%;"></a>

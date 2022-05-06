@@ -57,7 +57,7 @@
 
 {%  for data in semua_akun %}
 <div class="box2">
-  <p style="font-size: 12px;">12/02/2020</p>
+  <p style="font-size: 12px;">{{data.tanggal_upload}}</p>
   <div class="layoutdalam">
     <a href="post/{{data.slug}}"><p>{{data.judul}}</p></a>
     
@@ -83,7 +83,7 @@
   <p>Mau bikin Thread?</p>
   <div class="layoutdalam">
     <p style="font-size: 14px;">Forum untuk berbagi berita,rekomendasi atau terkait dengan aplikasi</p>
-    <a href="#"><img class="Tombolthread" src="../static/img/forum/Tombolthread.png"></a>
+    <a href="/forum/create"><img class="Tombolthread" src="../static/img/forum/Tombolthread.png"></a>
 
 
   </div>

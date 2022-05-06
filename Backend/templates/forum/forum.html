@@ -13,20 +13,23 @@
       <li>
         <a href="/" style="color:white ; font-size: 18pt;  font-family: Poppins;">Beranda</a>
       </li>
-      <li><a href="/berita" style="color:white; font-size: 18pt; font-family: Poppins;">Berita</a></li>
+      <li><a href="/berita" style="color:white; font-size: 18pt;font-weight: bolder; font-family: Poppins;">Berita</a></li>
       <li><a href="/umkm" style="color:white ; font-size: 18pt; font-family: Poppins;">UMKM</a></li>
       
 
       {% if user.is_authenticated %}
-        <li><a href="/forum" style="color:white ; font-weight: bolder;font-size: 18pt; font-family: Poppins;">Forum</a></li>
+        <li><a href="/forum" style="color:white ; font-size: 18pt; font-family: Poppins;">Forum</a></li>
 
         <li><a href="/logout" style="color:red ; font-size: 18pt; font-weight: bold; font-family: Poppins;">Keluar</a></li>
       {% else %}
-      <li><a href="/login" style="color:white ; font-weight: bolder;font-size: 18pt; font-family: Poppins;">Forum</a></li>
+      <li><a href="/login" style="color:white ; font-size: 18pt; font-family: Poppins;">Forum</a></li>
       <li>
         <a href="/login"><img src="/static/img/home/profile.png" width="35px" height="35px" style="margin-left:30%" /></a>
       </li>
       
+      {% endif %}
+      {% if user.is_superuser %}
+        <li><a href="/admin" style="color:white ; font-size: 18pt; font-family: Poppins;">Admin</a></li>
       {% endif %}
     </ul>
 
@@ -62,7 +65,7 @@
     <img class="gambarlofilebar" src="/{{semua_akun.gambar}}">
     <p>{{semua_akun.isi_topik}}</p>
 
-
+    <a href="/forum/comment"><h3>Balas</h3></a>
   </div>
 </div>
 
@@ -82,22 +85,24 @@
   <p>Mau bikin Thread?</p>
   <div class="layoutdalam">
     <p style="font-size: 14px;">Forum untuk berbagi berita,rekomendasi atau terkait dengan aplikasi</p>
-    <a href="#"><img class="Tombolthread" src="/static/img/forum/Tombolthread.png"></a>
+    <a href="http://127.0.0.1:8000/admin/forum/topik/add/"><img class="Tombolthread" src="/static/img/forum/Tombolthread.png"></a>
 
 
   </div>
 </div>
 
-{%  for data in posts_komentar %}
+
 <div class="box5"  style="margin-left: 21%;">
+  {%for data in posts_komentar%}
   <img class="Ellipse" src="/static/img/forum/Ellipse.png">
   <p>{{data.username_user}}</p>
   <p style="font-size: 12px;">{{data.tanggal_upload}}</p>
   <div class="layoutdalam2">
     <p>{{data.isi_komentar}}</p>
   </div>
+  {%endfor%}
 </div>
-{%endfor%}
+
 
 
 

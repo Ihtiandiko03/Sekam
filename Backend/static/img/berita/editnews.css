@@ -1,5 +1,8 @@
+html {
+scroll-behavior: smooth;
+}
 h1 {
-  color: #fff;
+  color: #EFEFEF;
   font-family: verdana;
   font-size: 300%;
 }
@@ -9,13 +12,13 @@ p {
   font-size: 160%;
 }
 
-body { 
-  
-  flex: 1;
+body {  
+  background: #E6E6E6;
   background-image: url('rectangle1.png');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  font-family: verdana;
 
 
 }
@@ -23,14 +26,25 @@ body {
 form {
     width:500px;
     margin:50px auto;
+    font-family: verdana;
 }
 
 
-a{text-decoration: none; font-size: 20px;font-family: sans-serif;padding: 14px 10px}
-ul{padding: 14px}
-li{list-style: none; display: inline;}
-li a{; color:#d4d4d4;}
-li a:hover{background: #4da4ff; color:#fff;}
+a{text-decoration: none; font-size: 20px;font-family: verdana;;padding: 14px 10px}
+ul{
+    padding: 14px;
+font-family: verdana;
+}
+li{
+    list-style: none; 
+    display: inline;
+    font-family: verdana;
+}
+li a{ 
+    color:#d4d4d4;
+    font-family: verdana;
+}
+li a:hover{background: #4da4ff; color:#fff; font-family: verdana;}
 
 
 .kanan{
@@ -53,13 +67,15 @@ li a:hover{background: #4da4ff; color:#fff;}
     height: auto;
 }
 .imglogo{
-    margin-left: 10%;
-    width:5% ;
+    margin: 1% 4% 8% 10%;
+    width:8% ;
     height:10%;
   
 }
 .konten{
   margin-top: -300px;
+  right: 100px;
+  position: absolute;
 }
 
 
@@ -67,15 +83,19 @@ li a:hover{background: #4da4ff; color:#fff;}
 .box1{
 margin: 7% 0% 0%0%;
 width:90%;
-height:1000px;
-background:#dfdfdf;
+height:850px;
+background:#fff;
 border-radius: 50px;
 box-shadow: 10px 10px 5px lightblue;
+font-family: verdana;
 }
+
+
 .TombolKembali{
+    padding-top: 2%;
     margin-left: -85%;
-    height: 5%;
-    width: 5%;
+    height: 10%;
+    width: 4%;
 }
 .Layoutdalam{
     display: flex;
@@ -84,19 +104,24 @@ box-shadow: 10px 10px 5px lightblue;
     height:40%;
     width:40%;
     border-radius: 20px;
-    margin-left: -40%;
-}
-.konten{
-    padding-left: 50%;
-    padding-top: 5%;
 }
 .TombolLanjut{
-    position: absolute;
-    left: 45%;
-    bottom: -450px;
-  
+    font-family: verdana;
 }
-.isikonten{
-    margin: 4px 3px 3px 3px;
-    text-align: justify;
+
+.navberita{
+    position: absolute;
+    margin: 3% 2% 5% 2%;
+    font-family: verdana;
+
+}
+#top a {
+padding: 1rem;
+background-color: red;
+color: black;
+position: fixed;
+right: 1rem;
+bottom: 1rem;
+border-radius: 50px;
+font-family: verdana;
 }

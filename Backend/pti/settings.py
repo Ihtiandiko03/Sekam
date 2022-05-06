@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # 'pti.apps.SuitConfig',
+    'admin_interface',
+    'colorfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,7 +85,7 @@ WSGI_APPLICATION = 'pti.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pti2',
+        'NAME': 'pti3',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',

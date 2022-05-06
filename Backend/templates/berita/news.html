@@ -1,14 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{{semua_akun.judul}} | SEKAM</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   <title>{{semua_akun.judul}} | SEKAM</title>
   <link rel="stylesheet" type="text/css" href="/static/img/berita/editnews.css">
 </head>
 <img class="imglogo" src="/static/img/berita/logosekam.png">
 
-<div>
+<span>
   <nav>
-    <ul style="margin-left: 40%; margin-top: -2%;">
+    <ul style="margin-left: 40%; margin-top: -14%;">
     <li>
         <a href="/" style="color:white ; font-size: 18pt;  font-family: Poppins;">Beranda</a>
       </li>
@@ -32,33 +39,37 @@
   </nav>
 
 
-</div>
-
-
-
-
+</span>
+  </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<span class="navberita">
+
+
+</span>
 <center>
-
-
 <div class="box1">
-  <a href="/berita/"><img class="TombolKembali" src="/static/img/berita/tombolkembali.png"></a>
+  <img class="TombolKembali" src="/static/img/berita/navbarM.png">
   <div class="layoutdalam">
-    <img class="gambarberita" src="/{{semua_akun.gambar}}">
-    <h1 class="konten" style="color: black;">{{semua_akun.judul}}</h1>
-      </div>
+    <img class="gambarberita; py-3" src="/{{semua_akun.gambar}}">
+    <div class="py-4">{{semua_akun.judul}}</div>
   <p class="isikonten" style="color: black;">{{semua_akun.isi_berita}}</p>
+  </div>
 
 
 
 </div>
+<br>
 
-
-
-
-    
+<footer>
+  <br>
+  <span class="p-5">SEKAM.COM</span>
+</footer>    
 
 </center>
-</body>
+<div id="top"><a href="#">Back to Top</a></div>
 
+
+</body>
+  
 </html>
