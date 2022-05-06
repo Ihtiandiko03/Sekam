@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import UserRegisterForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import Group
 
 # Create your views here.
 
@@ -13,8 +14,13 @@ def index(request):
 def register(request):
     if request.method == "POST":
         form = UserRegisterForm(request.POST)
+        
+
         if form.is_valid():
-            form.save()
+            user = form.save()
+            group = form.cleaned_data['group']        
+            group.user_set.add(user)
+
             username = form.cleaned_data.get('username')
             messages.success(request, f'Hi {username}, akun anda sudah didaftarkan. Silahkan login')
             return redirect('home')
