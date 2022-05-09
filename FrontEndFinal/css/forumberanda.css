@@ -1,0 +1,215 @@
+h1 {
+  color: #fff;
+  font-family: roboto;
+  font-size: 300%;
+}
+p {
+  color: #00000;
+  font-family: roboto;
+  font-size: 160%;
+}
+
+body {  
+  background-image: url('../imageasset/UMMMM.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+
+
+}
+
+form {
+    width:500px;
+    margin:50px auto;
+    font-family: roboto;
+}
+
+
+a{text-decoration: none; font-size: 20px;font-family: sans-serif;padding: 14px 10px}
+ul{padding: 14px}
+li{list-style: none; display: inline;}
+li a{; color:#d4d4d4;}
+li a:hover{background: #4da4ff; color:#fff;}
+
+
+.kanan{
+    width: 50%;
+    height: 150%;
+}
+.kiri{
+    font-size: 72pt;
+    margin-left: 20%;
+
+}
+.wrapper{
+    width: 10%;
+    display: flex;
+    
+}
+.img1{
+    margin-top: 15%;
+    width: 80%;
+    height: auto;
+}
+.imglogo{
+    position: !important;
+    margin: 1% 4% 8% 10%;
+    width:8% ;
+    height:10%;
+  
+}
+.konten{
+  margin-top: -300px;
+  right: 100px;
+  position: absolute;
+}
+
+
+
+.box1{
+margin: 6% 1% 0% 1%;
+width:20%;
+height:525px;
+background:#dfdfdf;
+border-radius: 20px;
+box-shadow: 10px 10px 5px lightblue;
+}
+.box2{
+margin: 5% 1% 0% 0%;
+width:60%;
+height: 800px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
+}
+.box3{
+margin: 5% 0% 0% 0%;
+width:15%;
+height:320px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
+}
+.box4{
+margin: 42% 1% 0% 1%;
+width:20%;
+height:250px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
+position: absolute;
+}
+.TombolKembali{
+    padding-top: 2%;
+    margin-left: -85%;
+    height: 8%;
+    width: 4%;
+}
+.Layoutdalam{
+    font-size: 14px;
+
+}
+.gambarberita{
+    margin-right: 40%;
+    height:40%;
+    width:40%;
+    border-radius: 20px;
+}
+.konten{
+    padding-left: 50%;
+    padding-top: 5%;
+}
+.TombolLanjut{
+    margin-left: 60%;
+}
+
+.navberita{
+    margin-top: 5%;
+
+}
+.contanin{
+    display: flex;
+}
+.gambarlofi{
+
+    height: 30%;
+    width: 30%;
+
+}
+.Tombolthread{
+    height: 10%;
+    width: 40%;
+}
+.gambarlofilebar{
+    height: 20%;
+    width: 35%;
+    border-radius: 20px;
+
+}
+.box5{
+position: absolute;
+margin: 60% 22% 0% 22%;
+width:60%;
+height: 800px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
+}
+.box6{
+position: absolute;
+margin: 106% 22% 0% 22%; /*atur margin*/
+width:60%;
+height: 1000px;
+background:#dfdfdf;
+border-radius: 50px;
+box-shadow: 10px 10px 5px lightblue;
+}
+.boxfooter{
+position: absolute;
+margin: 120% 22% 0% 22%;
+width:60%;
+height: 10px;
+background:transparent;
+border-radius: 50px;
+
+}
+.Layoutdalam2{
+    margin-left: 30%;
+}
+.Layoutdalam2footer{
+    margin-left: 30%;
+}
+.Ellipse{
+    margin: 5% 0% 0% 0%;
+}
+.reply{
+    margin: 20% -60% 0% 0%;
+}
+.caption{
+    font-family: roboto;
+    text-align: justify;
+    font-size: 15px;
+    padding: 4% 4% 5% 4%;
+}
+.minibox{
+    padding-top: 4%;
+}
+.navberita{
+    position: absolute;
+    margin: 3% 1% 5% 1%;
+    font-family: roboto;
+
+
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: #29166F;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 20px;
+}
