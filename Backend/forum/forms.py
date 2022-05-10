@@ -8,7 +8,6 @@ class TopikForm(forms.ModelForm):
 			'username',
 			'judul',
 			'isi_topik',
-			'tanggal_upload',
 			'gambar',
 			'kategori',
 		]
@@ -16,9 +15,5 @@ class TopikForm(forms.ModelForm):
 class KomentarForm(forms.ModelForm):
 	class Meta:
 		model = komentar
-		fields = [
-			'username_user',
-			'tanggal_upload',
-			'isi_komentar',
-			'id_topik',
-		]
+		exclude = ('username_user','id_topik', 'tanggal_upload')
+		# fields = ['isi_komentar']

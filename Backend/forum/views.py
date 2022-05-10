@@ -18,7 +18,7 @@ def index (request):
 def isi_berita (request, slugInput):
 
 	posts = topik.objects.get(slug=slugInput)
-	posts_komentar = komentar.objects.all().filter(id_topik = slugInput)
+	posts_komentar = komentar.objects.all().filter(id_topik = slugInput).order_by('-tanggal_upload')
 	print(posts_komentar)
 
 	context = {
@@ -52,17 +52,24 @@ def create (request):
 	return render(request, 'forum/threat.html', context)
 
 
-def buat_komentar(request):
-	akun_form = KomentarForm(request.POST or None)
+def buat_komentar(request, id_topik):
+
+	akun_form = topik.objects.get(slug = id_topik)
+	# notes = akun_form.objects.all()
+	# akun_form2 = KomentarForm(request.POST or None)
 
 	if request.method == 'POST':
-		if akun_form.is_valid():
-			akun_form.save()
+		form = KomentarForm(request.POST)
+		if form.is_valid():
+			note = form.save(commit=False)
+			note.username_user = request.user
+			note.id_topik = akun_form
+			note.save()
+
 
 		return redirect('/forum/')
+	else:
+		form = KomentarForm()
 
-	context = {
-		'akun_form' : akun_form,
-	}
 
-	return render(request, 'forum/buatkomentar.html', context)
+	return render(request,'forum/buatkomentar.html', {'akun_form':form})

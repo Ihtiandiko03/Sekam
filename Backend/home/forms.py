@@ -4,7 +4,7 @@ from django.contrib.auth.models import Group,User
 
 
 class UserRegisterForm(UserCreationForm):
-    group = forms.ModelChoiceField(queryset=Group.objects.all(), required=True)
+    group = forms.ModelChoiceField(queryset=Group.objects.filter(name="UMKM"), required=True)
     email = forms.EmailField()
 
     class Meta:

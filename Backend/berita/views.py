@@ -7,7 +7,7 @@ from django.http import HttpResponse
 
 def index (request):
 
-	semua_akun = berita.objects.all()
+	semua_akun = berita.objects.all().order_by('-tanggal')
 	context = {
 		'semua_akun': semua_akun,
 	}

@@ -20,7 +20,7 @@ class topik(models.Model):
 	username = models.ForeignKey(User, on_delete=models.CASCADE)
 	judul = models.CharField(max_length=255)
 	isi_topik = models.TextField()
-	tanggal_upload = models.DateField()
+	tanggal_upload = models.DateTimeField(auto_now_add=True)
 	gambar = models.ImageField(upload_to='static/forum/%Y/%m/%d')
 	kategori = models.CharField(max_length=100, choices=List_Kategori)
 	slug = models.SlugField(primary_key=True,blank=True, editable=False)
@@ -35,7 +35,7 @@ class topik(models.Model):
 
 class komentar(models.Model):
 	username_user = models.ForeignKey(User, on_delete=models.CASCADE)
-	tanggal_upload = models.DateField()
+	tanggal_upload = models.DateTimeField(auto_now_add=True)
 	isi_komentar = models.TextField()
 	id_topik = models.ForeignKey(topik, on_delete=models.CASCADE)
 
