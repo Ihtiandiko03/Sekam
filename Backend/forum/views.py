@@ -73,3 +73,27 @@ def buat_komentar(request, id_topik):
 
 
 	return render(request,'forum/buatkomentar.html', {'akun_form':form})
+
+def delete(request, delete_id):
+	komentar.objects.filter(id=delete_id).delete()
+	return redirect('/forum/')
+
+def update(request, update_id):
+	akun_update = komentar.objects.get(id=update_id)
+
+	data = {
+		'Komentar': akun_update.isi_komentar,	
+	}
+	akun_form = KomentarForm(request.POST or None, initial=data, instance=akun_update)
+	
+	if request.method == 'POST':
+		if akun_form.is_valid():
+			akun_form.save()
+
+		return redirect('/forum/')
+
+	context = {
+		'akun_form' : akun_form,
+	}
+
+	return render(request, 'forum/buatkomentar.html', context)
