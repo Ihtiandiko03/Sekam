@@ -1,0 +1,114 @@
+h1 {
+  color: #00000;
+  font-family: roboto;
+  text-align: center;
+}
+p {
+  color: #00000;
+  font-family: roboto;
+  font-size: 160%;
+}
+
+body {  
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+
+
+}
+
+form {
+    width:500px;
+    margin:50px auto;
+    font-family: roboto;
+}
+
+
+a{text-decoration: none; font-size: 20px;font-family: sans-serif;padding: 14px 10px}
+ul{padding: 14px}
+li{list-style: none; display: inline;}
+li a{; color:#d4d4d4;}
+li a:hover{background: #4da4ff; color:#fff;}
+
+
+.kanan{
+    width: 50%;
+    height: 150%;
+}
+.kiri{
+    font-size: 72pt;
+    margin-left: 20%;
+
+}
+.wrapper{
+    width: 10%;
+    display: flex;
+    
+}
+.img1{
+    margin-top: 15%;
+    width: 80%;
+    height: auto;
+}
+.imglogo{
+    position: !important;
+    margin: 1% 4% 8% 10%;
+    width:8% ;
+    height:10%;
+  
+}
+.konten{
+  margin-top: -300px;
+  right: 100px;
+  position: absolute;
+}
+
+
+
+
+.TombolKembali{
+    padding-top: 2%;
+    margin-left: -85%;
+    height: 8%;
+    width: 4%;
+}
+.Layoutdalam{
+    font-size: 14px;
+
+}
+.gambarberita{
+    margin-right: 40%;
+    height:40%;
+    width:40%;
+    border-radius: 20px;
+}
+.konten{
+    padding-left: 50%;
+    padding-top: 5%;
+}
+.TombolLanjut{
+    margin-left: 60%;
+}
+
+
+
+
+
+.navberita{
+ 
+    margin: 3% 1% 5% 1%;
+    font-family: roboto;
+
+
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #29166F;
+  color: white;
+  text-align: center;
+}
