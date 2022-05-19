@@ -13,7 +13,7 @@ def index (request):
 	}
 
 
-	return render(request, 'berita/index.html', context)
+	return render(request, 'berita/berita_beritaberanda.html', context)
 
 def create(request):
 	akun_form = BeritaForm(request.POST or None)
@@ -73,7 +73,7 @@ def singlePost(request, slugInput):
 	gambar="<h1>{}</h1>".format(posts.gambar)
 	isi_berita="<h1>{}</h1>".format(posts.isi_berita)
 	
-	return render(request, 'berita/news.html', context)
+	return render(request, 'berita/berita_daleman.html', context)
 
 
 def event (request):

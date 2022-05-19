@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     outline: 0;
-    font-family: roboto;
+    font-family: 'Open Sans', sans-serif;
 }
 body{
-    width: 80%;
-    height: 40%;
+    height: 70%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,10 +13,14 @@ body{
 }
 
 .container{
-    margin: 1% 40% 0% 40%;
-    padding: 10px 60px;
-    width: 45%;
-    height: 40%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 180px 60px;
+    width: 25%;
+    height: 80%;
     border-radius: 20px;
     background-color: #ffff;
     box-shadow: 0 0 10px rgba(255,255,255,.3);
@@ -34,7 +37,7 @@ body{
     color: #BABABA;
 }
 .container form input{
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 8px 10px;
     margin-bottom: 15px;
     border: none;
@@ -45,7 +48,7 @@ body{
     font-size: 20px;
 }
 .container form button{
-    width: 30%;
+    width: 50%;
     padding: 15px 0;
     border: none;
     border-radius: 20px;
@@ -54,15 +57,12 @@ body{
     color: #00000;
 }
 .imglogo{
-    width: 15%;
-    height: 15%;
-    margin-top: 0%;
+    width: 40%;
+    height: 40%;
+    margin-top: -20%;
 
 }
 .text1{
-    padding-bottom: 0%;
+    padding-bottom: 30%;
     padding-top: 5%;
-}
-.upload{
-    
 }

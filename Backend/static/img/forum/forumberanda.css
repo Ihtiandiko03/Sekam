@@ -1,7 +1,7 @@
 h1 {
-  color: #fff;
+  color: #00000;
   font-family: roboto;
-  font-size: 300%;
+  text-align: center;
 }
 p {
   color: #00000;
@@ -10,7 +10,7 @@ p {
 }
 
 body {  
-  background-image: url('rectangle1.png');
+
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -54,7 +54,7 @@ li a:hover{background: #4da4ff; color:#fff;}
 }
 .imglogo{
     position: !important;
-    margin: 2% 4% 8% 10%;
+    margin: 1% 4% 8% 10%;
     width:8% ;
     height:10%;
   
@@ -67,39 +67,7 @@ li a:hover{background: #4da4ff; color:#fff;}
 
 
 
-.box1{
-margin: 6% 1% 0% 1%;
-width:20%;
-height:525px;
-background:#dfdfdf;
-border-radius: 20px;
-box-shadow: 10px 10px 5px lightblue;
-}
-.box2{
-margin: 5% 1% 0% 0%;
-width:60%;
-height: 800px;
-background:#dfdfdf;
-border-radius: 50px;
-box-shadow: 10px 10px 5px lightblue;
-}
-.box3{
-margin: 5% 0% 0% 0%;
-width:15%;
-height:320px;
-background:#dfdfdf;
-border-radius: 50px;
-box-shadow: 10px 10px 5px lightblue;
-}
-.box4{
-margin: 42% 1% 0% 1%;
-width:20%;
-height:250px;
-background:#dfdfdf;
-border-radius: 50px;
-box-shadow: 10px 10px 5px lightblue;
-position: absolute;
-}
+
 .TombolKembali{
     padding-top: 2%;
     margin-left: -85%;
@@ -107,6 +75,7 @@ position: absolute;
     width: 4%;
 }
 .Layoutdalam{
+    font-size: 14px;
 
 }
 .gambarberita{
@@ -123,91 +92,23 @@ position: absolute;
     margin-left: 60%;
 }
 
+
+
+
+
 .navberita{
-    margin-top: 5%;
-
-}
-.contanin{
-    display: flex;
-}
-.gambarlofi{
-
-    height: 30%;
-    width: 30%;
-
-}
-.Tombolthread{
-    height: 10%;
-    width: 40%;
-}
-.gambarlofilebar{
-    height: 40%;
-    width: 80%;
-
-}
-.box5{
-position: absolute;
-margin: 60% 22% 0% 22%;
-width:60%;
-height: 800px;
-background:#dfdfdf;
-border-radius: 50px;
-box-shadow: 10px 10px 5px lightblue;
-}
-.box6{
-position: absolute;
-margin: 106% 22% 0% 22%; /*atur margin*/
-width:60%;
-height: 1000px;
-background:#dfdfdf;
-border-radius: 50px;
-box-shadow: 10px 10px 5px lightblue;
-}
-.boxfooter{
-position: absolute;
-margin: 140% 22% 0% 22%;
-width:60%;
-height: 80px;
-background:transparent;
-border-radius: 50px;
-
-}
-.Layoutdalam2{
-    margin-left: 30%;
-}
-.Layoutdalam2footer{
-    margin-left: 30%;
-}
-.Ellipse{
-    margin: 5% 0% 0% 0%;
-}
-.reply{
-    margin: 20% -70% 0% 0%;
-}
-.caption{
-    font-family: roboto;
-    text-align: justify;
-    font-size: 24px;
-    padding: 4% 4% 5% 4%;
-}
-.minibox{
-    padding-top: 4%;
-}
-.navberita{
-    position: absolute;
+ 
     margin: 3% 1% 5% 1%;
     font-family: roboto;
 
 
 }
-.footer{
-    width: 100%;
-    height: 50px;
-    padding-left: 10px;
-    line-height: 50px;
-    background: #29166F;
-    color: #fff;
-    position: absolute;
-    bottom: 0px;
-    border-radius: 20px;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #29166F;
+  color: white;
+  text-align: center;
 }

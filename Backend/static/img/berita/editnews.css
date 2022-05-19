@@ -1,24 +1,20 @@
-html {
-scroll-behavior: smooth;
-}
 h1 {
-  color: #EFEFEF;
-  font-family: verdana;
-  font-size: 300%;
+  color: #00000;
+  font-family: roboto;
+  text-align: center;
 }
 p {
-  color: #fff;
-  font-family: courier;
+  color: #00000;
+  font-family: roboto;
   font-size: 160%;
 }
 
 body {  
-  background: #E6E6E6;
-  background-image: url('rectangle1.png');
+
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  font-family: verdana;
+
 
 
 }
@@ -26,25 +22,15 @@ body {
 form {
     width:500px;
     margin:50px auto;
-    font-family: verdana;
+    font-family: roboto;
 }
 
 
-a{text-decoration: none; font-size: 20px;font-family: verdana;;padding: 14px 10px}
-ul{
-    padding: 14px;
-font-family: verdana;
-}
-li{
-    list-style: none; 
-    display: inline;
-    font-family: verdana;
-}
-li a{ 
-    color:#d4d4d4;
-    font-family: verdana;
-}
-li a:hover{background: #4da4ff; color:#fff; font-family: verdana;}
+a{text-decoration: none; font-size: 20px;font-family: sans-serif;padding: 14px 10px}
+ul{padding: 14px}
+li{list-style: none; display: inline;}
+li a{; color:#ffff;}
+li a:hover{background: #4da4ff; color:#fff;}
 
 
 .kanan{
@@ -67,6 +53,7 @@ li a:hover{background: #4da4ff; color:#fff; font-family: verdana;}
     height: auto;
 }
 .imglogo{
+    position: !important;
     margin: 1% 4% 8% 10%;
     width:8% ;
     height:10%;
@@ -80,48 +67,48 @@ li a:hover{background: #4da4ff; color:#fff; font-family: verdana;}
 
 
 
-.box1{
-margin: 7% 0% 0%0%;
-width:90%;
-height:850px;
-background:#fff;
-border-radius: 50px;
-box-shadow: 10px 10px 5px lightblue;
-font-family: verdana;
-}
-
 
 .TombolKembali{
     padding-top: 2%;
     margin-left: -85%;
-    height: 10%;
+    height: 8%;
     width: 4%;
 }
 .Layoutdalam{
-    display: flex;
+    font-size: 14px;
+
 }
 .gambarberita{
+    margin-right: 40%;
     height:40%;
     width:40%;
     border-radius: 20px;
 }
-.TombolLanjut{
-    font-family: verdana;
+.konten{
+    padding-left: 50%;
+    padding-top: 5%;
 }
+.TombolLanjut{
+    margin-left: 60%;
+}
+
+
+
+
 
 .navberita{
-    position: absolute;
-    margin: 3% 2% 5% 2%;
-    font-family: verdana;
+ 
+    margin: 3% 1% 5% 1%;
+    font-family: roboto;
+
 
 }
-#top a {
-padding: 1rem;
-background-color: red;
-color: black;
-position: fixed;
-right: 1rem;
-bottom: 1rem;
-border-radius: 50px;
-font-family: verdana;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #29166F;
+  color: white;
+  text-align: center;
 }

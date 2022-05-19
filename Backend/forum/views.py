@@ -13,7 +13,7 @@ def index (request):
 	}
 
 
-	return render(request, 'forum/forumberanda.html', context)
+	return render(request, 'forum/forum_beranda.html', context)
 
 def isi_berita (request, slugInput):
 
@@ -33,7 +33,7 @@ def isi_berita (request, slugInput):
 	gambar="<h1>{}</h1>".format(posts.gambar)
 	kategori="<h1>{}</h1>".format(posts.kategori)
 
-	return render(request, 'forum/forum.html', context)
+	return render(request, 'forum/forum_komentarbaru.html', context)
 
 def create (request):
 	buat_threat = TopikForm(request.POST or None)
@@ -72,7 +72,7 @@ def buat_komentar(request, id_topik):
 		form = KomentarForm()
 
 
-	return render(request,'forum/buatkomentar.html', {'akun_form':form})
+	return render(request,'forum/forum_buatkomentar.html', {'akun_form':form})
 
 def delete(request, delete_id):
 	komentar.objects.filter(id=delete_id).delete()

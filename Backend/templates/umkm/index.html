@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>UMKM | SEKAM</title>
+  
   <link rel="stylesheet" type="text/css" href="../static/img/umkm/umkm.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+    <title>Forum | SEKAM</title>
 </head>
-<img class="imglogo" src="../static/img/umkm/logosekam.png">
 
-<div>
-  <nav style="margin-left: 31%; margin-top: -6%;">
-    <ul>
 
-      <li>
-        <a href="../" style="color:white ; font-size: 18pt;  font-family: Poppins;">Beranda</a>
+
+<body style="background-image: none;">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: #29166F; border-radius: 30px; box-shadow: 10px 10px 5px lightgrey;">
+      <a class="navbar-brand" href="../">
+        <img src="/static/img/berita/logosekam.png" width="85" height="85" alt="">
+      </a>
+ 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ 
+      <ul class="navbar-nav ml-auto">
+        <li style="padding-right: 20px; font-family: sans-serif; font-style: bold; color: white;">
+        <a href="/" style="color: white;" ><b>Beranda</b></a>
       </li>
-      <li><a href="../berita" style="color:white; font-size: 18pt; font-family: Poppins;">Berita</a></li>
-      <li><a href="../umkm" style="color:white ;font-weight: bolder; font-size: 18pt; font-family: Poppins;">UMKM</a></li>
+      <li style="padding-right: 20px; font-family: sans-serif; font-style: bold; color: white;"><a href="/berita"style="color: white;" ><b>Berita</b></a></li>
+      <li style="padding-right: 20px; font-family: sans-serif; font-style: bold; color: white;"><a href="/umkm" style="color: white;"><b>UMKM</b></a></li>
+
+
       
 
       {% if user.is_authenticated %}
-        <li><a href="../forum" style="color:white ; font-size: 18pt; font-family: Poppins;">Forum</a></li>
+        <li style="padding-right: 20px; font-family: sans-serif; font-style: bold; color: white;"><a href="/forum" style="color: white;"><b>Forum</b></a></li>
 
-        <li><a href="../logout" style="color:red ; font-size: 18pt; font-weight: bold; font-family: Poppins;">Keluar</a></li>
+        <li style="padding-right: 20px; font-family: sans-serif; font-style: bold; color: white;"><a href="/logout" style="color: red;"><b>Keluar</b></a></li>
       {% else %}
-      <li><a href="../login" style="color:white ; font-size: 18pt; font-family: Poppins;">Forum</a></li>
-      <li>
-        <a href="../login"><img src="../static/img/home/profile.png" width="35px" height="35px" style="margin-left:30%" /></a>
-      </li>
+      <li style="padding-right: 20px; font-family: sans-serif; font-style: bold; color: white;"><a href="/login" style="color: white;"><b>Forum</b></a></li>
+
+
+      <span class="navbar-text mr-3">
+        Silahkan login atau daftar akun
+      </span>
+ 
+      <a href="/login" class="btn btn-outline-success mr-2"><b>Login</b></a>
+      <a href="/register" class="btn btn-outline-danger"><b>Daftar</b></a>
       
       {% endif %}
       {% if user.is_superuser %}
-        <li><a href="../admin" style="color:white ; font-size: 18pt; font-family: Poppins;">Admin</a></li>
+        <li style="padding-right: 50px; font-family: sans-serif; font-style: bold; color: white;"><a href="/admin" style="color: white;"><b>Admin</b></a></li>
       {% endif %}
-    </ul>
-
-  </nav>
-
-
-</div>
-
-
-
-
-<body>
+      </ul>
+ 
+      
+ 
+    </div>
+</nav>
 <center style="margin-top: 5%; width:70%; margin-left: 15%;">
 
 
 {% if user.is_superuser %}
-  <a href="http://127.0.0.1:8000/admin/umkm/data_umkm/add/"><h4>Tambah UMKM</h3></a>
+  <a href="http://127.0.0.1:8000/admin/umkm/data_umkm/add/"><h4 style="color: white; background-color: #331C8D; border-radius: 20px; width: 180px; height: 30px; padding-top: 5px;font-family: sans-serif; font-size: 18px; box-shadow: 5px 5px 5px lightblue;"><b>Tambah UMKM</b></h3></a>
 {% endif %}
 
   <table class="styled-table">
@@ -98,6 +114,7 @@
 
 
 </center>
+<div id="top"><a href="#">TOP</a></div>
 </body>
 
 </html>

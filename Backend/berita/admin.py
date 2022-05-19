@@ -4,7 +4,7 @@ from django.contrib import admin
 from .models import berita
 
 class PostAdmin(admin.ModelAdmin):
-	readonly_fields = ['slug',]
+	readonly_fields = ['slug']
 	list_display = ('judul', 'penulis', 'tanggal')
 	list_filter = ('tanggal', )
 	ordering = ('judul',)

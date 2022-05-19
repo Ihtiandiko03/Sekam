@@ -30,7 +30,7 @@ class topik(models.Model):
 		super(topik, self).save()
 
 	def __str__(self):
-		return "{}.{}".format(self.username, self.judul)
+		return "{}".format(self.judul)
 
 
 class komentar(models.Model):
